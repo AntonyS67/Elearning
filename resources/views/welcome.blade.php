@@ -7,8 +7,8 @@
 			<a href="index.html"><img src="{{asset('img/logo.png')}}" width="149" height="42" data-retina="true" alt=""></a>
 		</div>
 		<ul id="top_menu">
-			<li><a href="#0" class="search-overlay-menu-btn">Search</a></li>
-			<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Login</a></li>
+			<li><a href="#0" class="search-overlay-menu-btn">Buscar</a></li>
+			<li class="hidden_tablet"><a href="login.html" class="btn_1 rounded">Ingresa</a></li>
 		</ul>
 		<!-- /top_menu -->
 		<a href="#menu" class="btn_mobile">
@@ -20,9 +20,9 @@
 		</a>
 		<nav id="menu" class="main-menu">
 			<ul>
-				<li><span><a href="index.html">Home</a></span>
+				<li><span><a href="index.html">Bienvenido</a></span>
 				</li>
-				<li><span><a href="cursos.html">Courses</a></span>
+				<li><span><a href="cursos.html">Cursos</a></span>
 				</li>
 				
 			</ul>
@@ -49,7 +49,7 @@
 						<div id="custom-search-input">
 							<div class="input-group">
 								<input type="text" class=" search-query" placeholder="Aprende a tu ritmo">
-								<input type="submit" class="btn_search" value="Search">
+								<input type="submit" class="btn_search" value="Buscar">
 							</div>
 						</div>
 					</form>
@@ -62,13 +62,13 @@
 			<div class="container">
 				<ul>
 					<li><i class="pe-7s-study"></i>
-						<h4>+200 courses</h4><span>Explore a variety of fresh topics</span>
+						<h4>+200 courses</h4><span>Explora los mejores cursos</span>
 					</li>
 					<li><i class="pe-7s-cup"></i>
-						<h4>Expert teachers</h4><span>Find the right instructor for you</span>
+						<h4>Profesores Profesionales</h4><span>Encuentra el mejor orientador para ti</span>
 					</li>
 					<li><i class="pe-7s-target"></i>
-						<h4>Focus on target</h4><span>Increase your personal expertise</span>
+						<h4>Enfocate en un ambito</h4><span>Incrementa tu experiencia personal</span>
 					</li>
 				</ul>
 			</div>
@@ -78,7 +78,7 @@
 		<div class="container-fluid margin_120_0">
 			<div class="main_title_2">
 				<span><em></em></span>
-				<h2>Udema Popular Courses</h2>
+				<h2>SIBECH la mejor plataforma de aprendizaje</h2>
 				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
 			</div>
 			<div id="reccomended" class="owl-carousel owl-theme">
@@ -177,10 +177,10 @@
 							<a href="#0" class="wish_bt"></a>
 							<a href="curso_detalle.html"><img src="{{asset('img/course__list_5.jpg')}}" class="img-fluid" alt=""></a>
 							<div class="price">$35</div>
-							<div class="preview"><span>Preview course</span></div>
+							<div class="preview"><span>Cursos Previos</span></div>
 						</figure>
 						<div class="wrapper">
-							<small>Category</small>
+							<small>Categoria</small>
 							<h3>Persius delenit has cu</h3>
 							<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
 							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
@@ -199,10 +199,10 @@
 							<a href="#0" class="wish_bt"></a>
 							<a href="curso_detalle.html"><img src="{{asset('img/course__list_6.jpg')}}" class="img-fluid" alt=""></a>
 							<div class="price">$54</div>
-							<div class="preview"><span>Preview course</span></div>
+							<div class="preview"><span>Cursos Previos</span></div>
 						</figure>
 						<div class="wrapper">
-							<small>Category</small>
+							<small>Categoria</small>
 							<h3>Persius delenit has cu</h3>
 							<p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
 							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
@@ -228,7 +228,7 @@
 		<div class="container margin_30_95">
 			<div class="main_title_2">
 				<span><em></em></span>
-				<h2>Udema Categories Courses</h2>
+				<h2>Udema Categoria Cursos</h2>
 				<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
 			</div>
 			<div class="row">
@@ -238,8 +238,8 @@
 							<div class="block-horizzontal"></div>
 							<img src="{{asset('img/course_1.jpg')}}" class="img-fluid" alt="">
 							<div class="info">
-								<small><i class="ti-layers"></i>15 Programmes</small>
-								<h3>Arts and Humanities</h3>
+								<small><i class="ti-layers"></i>15 programadas</small>
+								<h3>Artes y humanidades</h3>
 							</div>
 						</figure>
 					</a>
@@ -251,8 +251,8 @@
 							<div class="block-horizzontal"></div>
 							<img src="{{asset('img/course_2.jpg')}}" class="img-fluid" alt="">
 							<div class="info">
-								<small><i class="ti-layers"></i>23 Programmes</small>
-								<h3>Engineering</h3>
+								<small><i class="ti-layers"></i>23 Programadas</small>
+								<h3>Ingenieria</h3>
 							</div>
 						</figure>
 					</a>
@@ -264,8 +264,8 @@
 							<div class="block-horizzontal"></div>
 							<img src="{{asset('img/course_3.jpg')}}" class="img-fluid" alt="">
 							<div class="info">
-								<small><i class="ti-layers"></i>23 Programmes</small>
-								<h3>Architecture</h3>
+								<small><i class="ti-layers"></i>23 Programadas</small>
+								<h3>Arquitectura</h3>
 							</div>
 						</figure>
 					</a>
@@ -277,8 +277,8 @@
 							<div class="block-horizzontal"></div>
 							<img src="{{asset('img/course_4.jpg')}}" class="img-fluid" alt="">
 							<div class="info">
-								<small><i class="ti-layers"></i>23 Programmes</small>
-								<h3>Science and Biology</h3>
+								<small><i class="ti-layers"></i>23 Programadas</small>
+								<h3>Ciencias y Biologia</h3>
 							</div>
 						</figure>
 					</a>
@@ -290,8 +290,8 @@
 							<div class="block-horizzontal"></div>
 							<img src="{{asset('img/course_5.jpg')}}" class="img-fluid" alt="">
 							<div class="info">
-								<small><i class="ti-layers"></i>23 Programmes</small>
-								<h3>Law and Criminology</h3>
+								<small><i class="ti-layers"></i>23 Programadas</small>
+								<h3>Abogado y criminologia</h3>
 							</div>
 						</figure>
 					</a>
@@ -303,8 +303,8 @@
 							<div class="block-horizzontal"></div>
 							<img src="{{asset('img/course_6.jpg')}}" class="img-fluid" alt="">
 							<div class="info">
-								<small><i class="ti-layers"></i>23 Programmes</small>
-								<h3>Medical</h3>
+								<small><i class="ti-layers"></i>23 Programadas</small>
+								<h3>Medicina</h3>
 							</div>
 						</figure>
 					</a>

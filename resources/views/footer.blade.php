@@ -6,7 +6,7 @@
                         <p>Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea. Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus expetendis vis.</p>
                         <div class="follow_us">
                             <ul>
-                                <li>Follow us</li>
+                                <li>Siguenos</li>
                                 <li><a href="#0"><i class="ti-facebook"></i></a></li>
                                 <li><a href="#0"><i class="ti-twitter-alt"></i></a></li>
                                 <li><a href="#0"><i class="ti-google"></i></a></li>
@@ -16,22 +16,22 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 ml-lg-auto">
-                        <h5>Useful links</h5>
+                        <h5>Link de usos</h5>
                         <ul class="links">
-                            <li><a href="#0">About</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="#0">Contacts</a></li>
+                            <li><a href="#0">acerca de nosotros</a></li>
+                            <li><a href="login.html">Inicia sesion</a></li>
+                            <li><a href="register.html">Registrate</a></li>
+                            <li><a href="#0">Contactos</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h5>Contact with Us</h5>
+                        <h5>Contactanos</h5>
                         <ul class="contacts">
-                            <li><a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a></li>
-                            <li><a href="mailto:info@udema.com"><i class="ti-email"></i> info@udema.com</a></li>
+                            <li><a href="tel://61280932400"><i class="ti-mobile"></i> +1 999999999</a></li>
+                            <li><a href="mailto:info@udema.com"><i class="ti-email"></i> info@SIBECH.com</a></li>
                         </ul>
                         <div id="newsletter">
-                        <h6>Newsletter</h6>
+                        <h6>Tu Correo</h6>
                         <div id="message-newsletter"></div>
                         <form method="post" action="assets/newsletter.php" name="newsletter_form" id="newsletter_form">
                             <div class="form-group">
@@ -47,12 +47,12 @@
                 <div class="row">
                     <div class="col-md-8">
                         <ul id="additional_links">
-                            <li><a href="#0">Terms and conditions</a></li>
-                            <li><a href="#0">Privacy</a></li>
+                            <li><a href="#0">Terminos y condiciones</a></li>
+                            <li><a href="#0">Privacidad</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <div id="copy">© 2017 Udema</div>
+                        <div id="copy">© 2019 SIBECH</div>
                     </div>
                 </div>
             </div>
