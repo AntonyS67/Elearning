@@ -51,8 +51,8 @@
                             <small><a href="{{ route('password.request') }}">Olvidaste tu Contraseña?</a></small>
                         @endif
                     </div>
-                    <a href="#0" class="btn_1 rounded full-width add_top_60">{{__('Iniciar Sesión')}}</a>
-                    <div class="text-center add_top_10">Nuevo Udema? <strong><a href="{{route('register')}}">Registrate!</a></strong></div>
+                    <button class="btn_1 rounded full-width add_top_60">{{__('Iniciar Sesión')}}</button>
+                    <div class="text-center add_top_10">Nuevo en Udema? <strong><a href="{{route('register')}}">Registrate!</a></strong></div>
                 </form>
                 <div class="copy">© 2017 Udema</div>
             </aside>

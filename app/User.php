@@ -49,7 +49,7 @@ use Laravel\Cashier\Billable;
 class User extends Authenticatable
 {
     use Notifiable, Billable;
-
+    public $timestamps = false;
 	protected static function boot () {
 		parent::boot();
 		static::creating(function (User $user) {

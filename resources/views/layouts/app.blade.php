@@ -7,22 +7,23 @@
                 <a href="{{ url('/') }}"><img src="{{asset('img/logo.png')}}" width="149" height="42" data-retina="true" alt=""></a>
             </div>
             <!-- Authentication Links -->
+            <ul id="top_menu">
             @guest
-                <ul id="top_menu">
+                
                     <li><a href="#0" class="search-overlay-menu-btn">Buscar</a></li>
-                    <li class="hidden_tablet"><a href="{{ route('login') }}" class="btn_1 rounded">{{ __('Ingresa') }}</a></li>
-                </ul>
+                    <li class="hidden_tablet">
+                        <a href="{{ route('login') }}" class="btn_1 rounded">{{ __('Ingresa') }}</a>
+                    </li>
             @else
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                <li class="dropdown">
+                    <a id="navbarDropdown" class="btn_1 rounded dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
-
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                         document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
+                            {{ __('Cerrar Sesión') }}
                         </a>
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -31,6 +32,7 @@
                     </div>
                 </li>
             @endguest
+            </ul>
             <!-- /top_menu -->
             <a href="#menu" class="btn_mobile">
                 <div class="hamburger hamburger--spin" id="hamburger">
