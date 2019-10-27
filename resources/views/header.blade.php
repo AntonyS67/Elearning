@@ -18,15 +18,18 @@
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
 
-    <!-- BASE CSS -->
 
+    <!-- BASE CSS -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/vendors.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('css/vendors.css')}}">
     <link rel="stylesheet" href="{{asset('css/all_icons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/tables.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
     <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="{{asset('css/custom.min.css')}}">
+
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-11097556-8']);
