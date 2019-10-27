@@ -1,73 +1,75 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+{{-- Inicio Login --}}
+@include('header')
+<body id="login_bg">
+	
+        <nav id="menu" class="fake_menu"></nav>
+        
+        <div id="preloader">
+            <div data-loader="circle-side"></div>
         </div>
-    </div>
-</div>
-@endsection
+        <!-- End Preload -->
+        
+        <div id="login">
+            <aside>
+                <figure>
+                    <a href="{{url('/')}}"><img src="img/logo.png" width="149" height="42" data-retina="true" alt=""></a>
+                </figure>
+                  <form method="POST" action="{{ route('login') }}">
+                    @csrf
+                    <div class="access_social">
+                        <a href="#0" class="social_bt facebook">{{__('Iniciar Sesión con Facebook')}}k</a>
+                        <a href="#0" class="social_bt google">{{__('Iniciar Sesión con Google')}}</a>
+                        <a href="#0" class="social_bt linkedin">{{__('Iniciar Sesión con Linkedin')}}</a>
+                    </div>
+                    <div class="divider"><span>Or</span></div>
+                    <div class="form-group">
+                        <span class="input">
+                        <input class="input_field" type="email" autocomplete="off" name="email">
+                            <label class="input_label">
+                            <span class="input__label-content @error('email') is-invalid @enderror">Email</span>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </label>
+                        </span>
+    
+                        <span class="input">
+                        <input class="input_field" type="password" autocomplete="new-password" name="password">
+                            <label class="input_label">
+                            <span class="input__label-content @error('password') is-invalid @enderror">Contraseña</span>
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </label>
+                        </span>
+                        @if (Route::has('password.request'))
+                            <small><a href="{{ route('password.request') }}">Olvidaste tu Contraseña?</a></small>
+                        @endif
+                    </div>
+                    <a href="#0" class="btn_1 rounded full-width add_top_60">{{__('Iniciar Sesión')}}</a>
+                    <div class="text-center add_top_10">Nuevo Udema? <strong><a href="{{route('register')}}">Registrate!</a></strong></div>
+                </form>
+                <div class="copy">© 2017 Udema</div>
+            </aside>
+        </div>
+        <!-- /login -->
+            
+    <!-- COMMON SCRIPTS -->
+    <script src="{{asset('js/jquery-2.2.4.min.js')}}"></script>
+    <script src="{{asset('js/common_scripts.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('js/validate.js')}}"></script>
+
+    <script src="{{asset('js/app.js')}}"></script>
+    <script src="{{asset('js/modernizr_tables.js')}}"></script>
+    <script src="{{asset('js/tables_func.js')}}"></script>
+      
+</body>
+</html>
+{{-- Fin login --}}
+                    
